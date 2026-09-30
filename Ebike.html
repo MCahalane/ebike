@@ -3,28 +3,27 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Our E-Bikes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse City, Mountain, and Commuter E-Bikes.">
+    <title>Our E-Bikes | E-Bike Shop</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <h1>Our E-Bikes</h1>
-
-    <h2>City E-Bike</h2>
-    <p>Perfect for everyday trips around the city.</p>
-
-    <h2>Mountain E-Bike</h2>
-    <p>Designed for adventurous rides and off-road trails.</p>
-
-    <h2>Commuter E-Bike</h2>
-    <p>A practical choice for travelling to work or university.</p>
-
-    <!-- This tells JavaScript about the current webpage address (URL). -->
-    <button onclick="window.location.href='index.html'">
-        Back to Home
-    </button>
+    <main class="page-shell bikes-page">
+        <a class="text-link" href="index.html">← Back to home</a>
+        <p class="eyebrow">FIND YOUR NEXT ADVENTURE</p>
+        <h1>Choose your <span>perfect ride.</span></h1>
+        <p class="intro">From weekday commutes to weekend escapes, there is an e-bike for the way you want to move.</p>
+        <section class="bike-grid" aria-label="Available e-bikes">
+            <article class="bike-card city-card"><div class="bike-icon" aria-hidden="true">🏙️</div><p class="card-number">01 / EVERYDAY</p><h2>City E-Bike</h2><p>Perfect for everyday trips around the city. Comfortable, nimble, and ready for wherever the road takes you.</p><a class="card-link" href="index.html">Explore the range <span aria-hidden="true">→</span></a></article>
+            <article class="bike-card mountain-card"><div class="bike-icon" aria-hidden="true">⛰️</div><p class="card-number">02 / ADVENTURE</p><h2>Mountain E-Bike</h2><p>Designed for adventurous rides and off-road trails, with the power and control to take on new terrain.</p><a class="card-link" href="index.html">Explore the range <span aria-hidden="true">→</span></a></article>
+            <article class="bike-card commuter-card"><div class="bike-icon" aria-hidden="true">🚲</div><p class="card-number">03 / COMMUTE</p><h2>Commuter E-Bike</h2><p>A practical choice for travelling to work or university. Efficient, dependable, and built for daily journeys.</p><a class="card-link" href="index.html">Explore the range <span aria-hidden="true">→</span></a></article>
+        </section>
+        <button id="homeButton" class="button secondary-button">Back to Home</button>
+    </main>
 
 </body>
 </html>
